@@ -25,7 +25,8 @@ export function SquareContextProvider(props) {
 
   const updateBoard = (index) => {
     //No actualizamos si ya tiene algo o hay ganador
-    if (board[index] || winner) return;
+    if (board[index] || winner || players.length === 0) return;
+
     //actualizar tablero
     const newBoard = [...board];
     newBoard[index] = turn;

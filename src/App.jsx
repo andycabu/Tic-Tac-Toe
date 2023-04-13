@@ -9,10 +9,6 @@ import { Players } from "./components/Players";
 function App() {
   const { resetGame, board, turn, players } = useContext(SquareContext);
 
-  useEffect(() => {
-    console.log("prueba useEffect");
-  }, []);
-
   return (
     <main className="board">
       <h1>Tic Tac Toe</h1>

@@ -5,10 +5,6 @@ export function Players() {
   const { setPlayersOne, setPlayersTwo, createPlayer, playerOne, playertwo } =
     useContext(SquareContext);
 
-  useEffect((handleSubmit) => {
-    console.log(handleSubmit);
-  });
-
   const handleSubmit = (e) => {
     e.preventDefault();
     createPlayer(playerOne, playertwo);
