@@ -14,7 +14,7 @@ export function WinnerModal() {
         <h2>{winnerText}</h2>
         <header className="win">
           {winner && (
-            <Square>{winner === "x" ? players[0] : players[1]}</Square>
+            <Square>{winner === "❌" ? players[0] : players[1]}</Square>
           )}
         </header>
 
