@@ -227,3 +227,54 @@ button:hover {
     transform: translateY(0);
   }
 }
+@media (max-width: 600px) {
+  body {
+    display: flex;
+    align-items: center;
+  }
+
+  .container-game {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .board {
+    margin: 20px auto;
+  }
+
+  .board button {
+    margin: 10px;
+  }
+
+  .square {
+    width: 80px;
+    height: 80px;
+    font-size: 36px;
+  }
+
+  .tie .text,
+  .winner .text {
+    width: 80vw;
+    height: 60vh;
+  }
+}
+
+/* Estilos para pantallas más grandes */
+
+@media (min-width: 1200px) {
+  .board {
+    max-width: 800px;
+  }
+
+  .square {
+    width: 120px;
+    height: 120px;
+    font-size: 64px;
+  }
+
+  .tie .text,
+  .winner .text {
+    width: 600px;
+    height: 400px;
+  }
+}
